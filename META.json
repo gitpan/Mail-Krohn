@@ -1,0 +1,68 @@
+{
+   "abstract" : "Yet another mail sender",
+   "author" : [
+      "Tokuhiro Matsuno E<lt>tokuhirom AAJKLFJEF@ GMAIL COME<gt>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Mail-Krohn",
+   "no_index" : {
+      "directory" : [
+         "inc"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Test::More" : "0.98",
+            "Test::Requires" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.38"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Class::Accessor::Lite" : "0.05",
+            "Email::MIME" : "0",
+            "Exporter" : "0",
+            "parent" : "0",
+            "perl" : "5.008005"
+         }
+      }
+   },
+   "provides" : {
+      "Mail::Krohn" : {
+         "file" : "lib/Mail/Krohn.pm",
+         "version" : "0.01"
+      },
+      "Mail::Krohn::Base" : {
+         "file" : "lib/Mail/Krohn/Base.pm",
+         "version" : 0
+      },
+      "Mail::Krohn::Sendmail" : {
+         "file" : "lib/Mail/Krohn/Sendmail.pm",
+         "version" : 0
+      },
+      "Mail::Krohn::Test" : {
+         "file" : "lib/Mail/Krohn/Test.pm",
+         "version" : 0
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ]
+   },
+   "version" : "0.01"
+}
